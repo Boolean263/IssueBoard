@@ -66,7 +66,7 @@ sub get_issues :Local {
 			$json_response = $json_text;
 		}
 		else {
-			push $json_response->{issues}, @{$json_text->{issues}};
+			push @{$json_response->{issues}}, @{$json_text->{issues}};
 		}
 
 		$page++;
